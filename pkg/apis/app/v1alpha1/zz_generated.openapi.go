@@ -13,9 +13,9 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/example-inc/app-operator/pkg/apis/app/v1alpha1.AppService":       schema_pkg_apis_app_v1alpha1_AppService(ref),
-		"github.com/example-inc/app-operator/pkg/apis/app/v1alpha1.AppServiceSpec":   schema_pkg_apis_app_v1alpha1_AppServiceSpec(ref),
-		"github.com/example-inc/app-operator/pkg/apis/app/v1alpha1.AppServiceStatus": schema_pkg_apis_app_v1alpha1_AppServiceStatus(ref),
+		"github.com/dminca/app-operator/pkg/apis/app/v1alpha1.AppService":       schema_pkg_apis_app_v1alpha1_AppService(ref),
+		"github.com/dminca/app-operator/pkg/apis/app/v1alpha1.AppServiceSpec":   schema_pkg_apis_app_v1alpha1_AppServiceSpec(ref),
+		"github.com/dminca/app-operator/pkg/apis/app/v1alpha1.AppServiceStatus": schema_pkg_apis_app_v1alpha1_AppServiceStatus(ref),
 	}
 }
 
@@ -46,19 +46,19 @@ func schema_pkg_apis_app_v1alpha1_AppService(ref common.ReferenceCallback) commo
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/example-inc/app-operator/pkg/apis/app/v1alpha1.AppServiceSpec"),
+							Ref: ref("github.com/dminca/app-operator/pkg/apis/app/v1alpha1.AppServiceSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/example-inc/app-operator/pkg/apis/app/v1alpha1.AppServiceStatus"),
+							Ref: ref("github.com/dminca/app-operator/pkg/apis/app/v1alpha1.AppServiceStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/example-inc/app-operator/pkg/apis/app/v1alpha1.AppServiceSpec", "github.com/example-inc/app-operator/pkg/apis/app/v1alpha1.AppServiceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/dminca/app-operator/pkg/apis/app/v1alpha1.AppServiceSpec", "github.com/dminca/app-operator/pkg/apis/app/v1alpha1.AppServiceStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 

@@ -1,7 +1,7 @@
 package apis
 
 import (
-	"github.com/example-inc/app-operator/pkg/apis/app/v1alpha1"
+	"github.com/dminca/app-operator/pkg/apis/app/v1alpha1"
 )
 
 func init() {

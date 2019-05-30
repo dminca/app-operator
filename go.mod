@@ -1,4 +1,4 @@
-module github.com/example-inc/app-operator
+module github.com/dminca/app-operator
 
 require (
 	contrib.go.opencensus.io/exporter/ocagent v0.4.9 // indirect
