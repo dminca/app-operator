@@ -69,6 +69,12 @@ eventhough you deleted it the _thingy_ is still there.
 To solve this, just execute the _delete_ command again: `kind delete cluster`
 and now you can proceed creating the K8s cluster.
 
+- `error: SchemaError(io.k8s.api.core.v1.Container): invalid object doesn't have additional properties`
+
+> This is thrown when trying to create the ServiceAccount via `kubectl create -f deploy/service_account.yaml`.
+Luckily there's a [fix for that (on MacOS only unfortunately)][4].
+
 [1]: https://github.com/dminca/operator-sdk
 [2]: https://golang.org/doc/
 [3]: https://kind.sigs.k8s.io/
+[4]: https://stackoverflow.com/a/55564032
