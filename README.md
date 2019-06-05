@@ -20,6 +20,9 @@ export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"
 
 # is it working?
 kubectl cluster-info
+
+# tear-down cluster
+kind delete cluster
 ```
 
 - apply the K8s stuff
@@ -78,3 +81,4 @@ Luckily there's a [fix for that (on MacOS only unfortunately)][4].
 [2]: https://golang.org/doc/
 [3]: https://kind.sigs.k8s.io/
 [4]: https://stackoverflow.com/a/55564032
+
